@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <title>Livros da Escalada</title>
+  </head>
+  <body>
+    <div class="img">
+      <img src="./magna.jpeg" />
+    </div>
+    <div class="divForm">
+      <form id="form" class="">
+        <div class="field">
+          <h2>Hora de fazer a encomenda dos livros!</h2>
+          <p>
+            Se você prefere comprar por cartão de crédito, use nossa
+            <a href="https://magnaescrita.lojaintegrada.com.br/" target="_blank"
+              >Loja Virtual.</a
+            >
+            Aqui recebemos apenas pedidos via PIX. <br /><br />
+            Vamos começar?
+          </p>
+        </div>
+        <div class="field">
+          <label for="email">Qual o seu e-mail?</label>
+          <input
+            placeholder="Sua resposta"
+            type="email"
+            id="email"
+            autocomplete="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="name">Qual o nome do aluno?</label>
+          <input
+            placeholder="Sua resposta"
+            type="text"
+            id="name"
+            autocomplete="name"
+            required
+          />
+        </div>
+        <div class="field">
+          <label for="turma">Qual a turma e período do aluno?</label>
+          <select name="turma" id="turma" required>
+            <option value="" selected></option>
+            <option value="primeiroAno">1º Ano</option>
+            <option value="segundoAnoManha">2º Ano Manhã</option>
+            <option value="segundoAnoTarde">2º Ano Tarde</option>
+            <option value="terceiroAno">3º Ano</option>
+            <option value="quartoAno">4º Ano</option>
+            <option value="quintoAno">5º Ano</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="qty">Quantos livros você quer encomendar?</label>
+          <select name="qty" id="qty" form="form" required>
+            <option value="0" selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="tableDiv">
+          <table>
+            <tr>
+              <th>Produto</th>
+              <th>Subtotal</th>
+            </tr>
+            <tr>
+              <td id="turmaPedido"></td>
+              <td id="subtotal">R$ 0,00</td>
+            </tr>
+            <tr>
+              <td id="qtyPedido" colspan="2">X</td>
+            </tr>
+
+            <tr>
+              <td>Total</td>
+              <td id="total">R$ 0,00</td>
+            </tr>
+          </table>
+        </div>
+        <div class="field last">
+          <p for="file">
+            Para fazer o pagamento, escaneie o QR Code abaixo ou use a chave PIX
+            CNPJ: 31026892000123 <br /><br />
+          </p>
+          <img src="./pix-me.jpg" alt="" />
+          <p>
+            Depois faça o upload do comprovante abaixo. Caso tenha problema com
+            o envio do comprovante, envie uma mensagem
+            <a
+              href="https://api.whatsapp.com/send?phone=551139986635"
+              target="_blank"
+              >aqui</a
+            >
+          </p>
+          <input
+            name="file"
+            id="file"
+            type="file"
+            accept="image/*, application/pdf"
+            required
+          />
+        </div>
+        <div class="button">
+          <button type="submit" form="form">Enviar pedido</button>
+        </div>
+      </form>
+    </div>
+    <div id="loading" class="none flex-center">
+      <img src="./loading.png" />
+    </div>
+    <div class="success none"><h3>Pedido enviado com sucesso!</h3></div>
+    <div class="error none">
+      <h3>
+        Algo de errado ocorreu no envio! Contate-nos:
+        <a
+          href="https://api.whatsapp.com/send?phone=5511991627042"
+          target="_blank"
+          >aqui</a
+        >
+      </h3>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
