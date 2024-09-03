@@ -1,17 +1,17 @@
 let formValues = {};
 const valoresLivros = [
-  [0, 86.9, 83.6, 79.2, 74.8, 74.8, 74.8, 74.8, 70.4, 70.4, 64.9],
-  [0, 108.9, 104.85, 104.85, 99.5, 99.5, 99.5, 99.5, 94.9, 94.9, 88.9],
-  [0, 124.3, 121.0, 116.0, 112.0, 112.2, 112.2, 112.2, 107.8, 107.8, 102.3],
+  [0, 91, 86, 83, 79, 78, 78, 78, 78, 78, 78],
+  [0, 112, 108, 105, 103, 103, 103, 103, 103, 103, 103],
+  [0, 123, 117, 113, 109, 109, 109, 109, 109, 109, 109],
+  [0, 134, 129, 125, 120, 120, 120, 120, 120, 120, 120],
 ];
 
 const relation = {
   primeiroAno: valoresLivros[0],
-  segundoAnoManha: valoresLivros[1],
-  terceiroAno: valoresLivros[1],
-  segundoAnoTarde: valoresLivros[2],
-  quartoAno: valoresLivros[2],
-  quintoAno: valoresLivros[2],
+  segundoAno: valoresLivros[1],
+  terceiroAno: valoresLivros[2],
+  quartoAno: valoresLivros[3],
+  quintoAno: valoresLivros[3],
 };
 
 function handleChange(e) {
@@ -53,6 +53,11 @@ function handleChange(e) {
     const turmaPedido = select[select.options.selectedIndex].innerHTML;
 
     document.getElementById("turmaPedido").innerHTML = `Livro ${turmaPedido}`;
+  } else {
+    document.getElementById("qtyPedido").innerHTML = "X";
+    document.getElementById("turmaPedido").innerHTML = "";
+    document.getElementById("subtotal").innerHTML = "R$ 0,00";
+    document.getElementById("total").innerHTML = "R$ 0,00";
   }
 }
 
