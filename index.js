@@ -3,15 +3,14 @@ const valoresLivros = [
   [0, 91, 86, 83, 79, 78, 78, 78, 78, 78, 78],
   [0, 112, 108, 105, 103, 103, 103, 103, 103, 103, 103],
   [0, 123, 117, 113, 109, 109, 109, 109, 109, 109, 109],
-  [0, 134, 129, 125, 120, 120, 120, 120, 120, 120, 120],
 ];
 
 const relation = {
   primeiroAno: valoresLivros[0],
   segundoAno: valoresLivros[1],
-  terceiroAno: valoresLivros[2],
-  quartoAno: valoresLivros[3],
-  quintoAno: valoresLivros[3],
+  terceiroAno: valoresLivros[1],
+  quartoAno: valoresLivros[2],
+  quintoAno: valoresLivros[2],
 };
 
 function handleChange(e) {
@@ -57,6 +56,7 @@ function handleChange(e) {
     document.getElementById("qtyPedido").innerHTML = "X";
     document.getElementById("turmaPedido").innerHTML = "";
     document.getElementById("subtotal").innerHTML = "R$ 0,00";
+    cod;
     document.getElementById("total").innerHTML = "R$ 0,00";
   }
 }
