@@ -56,7 +56,6 @@ function handleChange(e) {
     document.getElementById("qtyPedido").innerHTML = "X";
     document.getElementById("turmaPedido").innerHTML = "";
     document.getElementById("subtotal").innerHTML = "R$ 0,00";
-    cod;
     document.getElementById("total").innerHTML = "R$ 0,00";
   }
 }
@@ -94,13 +93,15 @@ function handleSubmit(e) {
       document.getElementsByClassName("divForm")[0].classList.toggle("none");
       document.getElementsByClassName("success")[0].classList.toggle("none");
     })
-    .then((r) => {})
+    .then((r) => {
+      console.log(r);
+    })
     .catch((err) => {
+      console.log(err);
+
       document.getElementsByClassName("divForm")[0].classList.toggle("none");
       document.getElementsByClassName("error")[0].classList.toggle("none");
     });
-
-  console.log({ ...fileObj, ...formValues });
 }
 
 document.getElementById("form").addEventListener("submit", handleSubmit);
