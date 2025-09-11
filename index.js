@@ -1,14 +1,12 @@
 let formValues = {};
 const valoresLivros = [
   [0, 91, 86, 83, 79, 78, 78, 78, 78, 78, 78],
-  [0, 112, 108, 105, 103, 103, 103, 103, 103, 103, 103],
-  [0, 123, 117, 113, 109, 109, 109, 109, 109, 109, 109],
 ];
 
 const relation = {
-  primeiroAno: valoresLivros[0],
+  primeiroAnoManha: valoresLivros[0],
+  primeiroAnoTarde: valoresLivros[0],
   segundoAno: valoresLivros[1],
-  terceiroAno: valoresLivros[1],
   quartoAno: valoresLivros[2],
   quintoAno: valoresLivros[2],
 };
