@@ -6,9 +6,9 @@ const valoresLivros = [
 const relation = {
   primeiroAnoManha: valoresLivros[0],
   primeiroAnoTarde: valoresLivros[0],
-  segundoAno: valoresLivros[1],
-  quartoAno: valoresLivros[2],
-  quintoAno: valoresLivros[2],
+  segundoAno: valoresLivros[0],
+  quartoAno: valoresLivros[0],
+  quintoAno: valoresLivros[0],
 };
 
 function handleChange(e) {
