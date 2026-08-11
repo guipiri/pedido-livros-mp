@@ -1,6 +1,6 @@
 let formValues = {};
 const valoresLivros = [
-  [0, 91, 86, 83, 79, 78, 78, 78, 78, 78, 78],
+  [0, 91, 86.45, 83.72, 80.08, 78.26, 76.44, 76.44, 76.44, 76.44, 76.44],
 ];
 
 const relation = {
@@ -78,7 +78,7 @@ function handleSubmit(e) {
   e.preventDefault();
 
   const url =
-    "https://script.google.com/macros/s/AKfycbySSdr69bL_JW9i8jXX9bR59hiBWW0DTOp0NTVOfFoDPETBlOYTvNs1DHBGvlOwR4E/exec";
+    "https://script.google.com/macros/s/AKfycbxLgZKniuNQXoYbAYenIUAS9e1DNecRQjEdiPN--rh6V1el1kDDRODt5ocijsdHnXxE/exec";
   document.getElementById("loading").classList.toggle("none");
   fetch(url, {
     method: "POST",
