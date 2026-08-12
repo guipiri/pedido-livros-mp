@@ -7,6 +7,7 @@ const relation = {
   primeiroAnoManha: valoresLivros[0],
   primeiroAnoTarde: valoresLivros[0],
   segundoAno: valoresLivros[0],
+  terceiroAno: valoresLivros[0],
   quartoAno: valoresLivros[0],
   quintoAno: valoresLivros[0],
 };
