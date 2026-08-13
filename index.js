@@ -4,8 +4,7 @@ const valoresLivros = [
 ];
 
 const relation = {
-  primeiroAnoManha: valoresLivros[0],
-  primeiroAnoTarde: valoresLivros[0],
+  primeiroAno: valoresLivros[0],
   segundoAno: valoresLivros[0],
   terceiroAno: valoresLivros[0],
   quartoAno: valoresLivros[0],
